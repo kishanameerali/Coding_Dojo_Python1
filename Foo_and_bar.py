@@ -11,8 +11,11 @@ For example, if the number you are evaluating is 25, you will have to figure out
 a perfect square. It is, so print "Bar".
 """
 
-for num in range (100,100001):
-    if for i in range(2,num):
-        if (num % i) != 0:
-            print "foo"
-    elif num**0.5
+for num in range (2,100):
+    for divider in range(2, num/2):
+        if (num % divider is 0):
+            print num
+            print "FooBar"
+        #if (num % i) != 0:
+            #print "foo"
+    #elif num**0.5

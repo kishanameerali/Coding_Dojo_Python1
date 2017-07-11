@@ -22,7 +22,7 @@ example = l
 array = ""
 
 for i in range(0,len(example)):
-    if all(isinstance(example,int) for example in example):
+    if all(isinstance(example,int) for example in example): #if all(isinstance(x, SubclassOne) for x in list_of_stuff):
         array = "int"
     elif all(isinstance(example,str) for example in example):
         array = "str"
@@ -30,7 +30,7 @@ for i in range(0,len(example)):
         array = "mixed"
 
 for idx in range(0,len(example)):
-    if type(example[idx]) is int:
+    if type(example[idx]) is int or type(example[idx]) is float:
         sum = sum + example[idx]
     elif type(example[idx]) is str:
         new_string = new_string +" " + example[idx]
